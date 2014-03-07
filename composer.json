@@ -1,0 +1,41 @@
+{
+	"name": "NickTest",
+	"description": "The Laravel API test project using Mongodb.",
+	"keywords": ["framework", "laravel"],
+	"require": {
+		"laravel/framework": "4.*",
+		"way/generators": "dev-master",
+		"barryvdh/laravel-ide-helper": "1.*",
+		"jenssegers/mongodb": "*"
+
+	
+	},
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan optimize"
+		],
+		"pre-update-cmd": [
+			"php artisan clear-compiled"
+		],
+		"post-update-cmd": [
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}

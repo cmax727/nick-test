@@ -1,0 +1,8 @@
+
+client name = Nick Lin
+job = https://www.odesk.com/jobs/Senior-Laravel-PHP-and-MEAN-Developer-Full-Time-Position-Agency_~01c4b6702b5d4a9101
+test project spec = https://docs.google.com/document/d/1sUR-qCOlaqyKphi2nHf-54WSirFoFbLfi8cy3axXaFc/edit
+
+----------------- job spec
+Laravel + Mongodb + API
+
