@@ -37,7 +37,7 @@ class UserprofilesController extends \BaseController {
         foreach (range(0,2) as $kk){
         $host[] = array(
             'hostname'=>Input::get('hostname')[$kk],
-            'block'=>Input::get('block')[$kk]
+            'block'=>@Input::get('block')[$kk]
         );
         $network[] = array(
             'nid'=>Input::get('nid')[$kk],
@@ -62,7 +62,7 @@ class UserprofilesController extends \BaseController {
 
         $userProfile->save();
 
-        return View::make('userprofiles.show', $userProfile->uid);
+        return View::make('userprofiles.show', array('uprofile'=>$userProfile));
     }
 
 	/**
